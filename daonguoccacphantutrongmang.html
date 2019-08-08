@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đảo ngược vị trí trong mảng</title>
+</head>
+<body>
+    <script>
+        let array =[1,45,23,14,78,91];
+        let begin=0;
+        let end =array.length-1;
+
+        while (begin<end) {
+            let b=array[begin];
+            array[begin] =array[end];
+            array[end] =b;
+            begin++;
+            end--;
+
+        }
+        document.write(array);
+
+    </script>
+
+</body>
+</html>
